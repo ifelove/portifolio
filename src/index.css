@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,100;1,200;1,300;1,500;1,700;1,800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  background-color: rgb(43, 41, 41);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: all 0.5s ease;
+}
+.navlinks {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+.navlinks li {
+  transition: all 0.5s ease;
+  font-weight: 400;
+  color: white;
+}
+.navlinks li:hover {
+  color: blue;
+  text-shadow: 3px 3px 20px blue, -2px 1px 3px white;
+}
+.logo {
+  font-size: 30px;
+  font-weight: 600;
+  color: blue;
+  background-color: transparent;
+}
+.logo:hover {
+  filter: drop-shadow(3px 4px 7px white);
+}
+.contact {
+  display: inline;
+  border: 2px solid white;
+  padding: 11px 26px;
+  color: white;
+  transition: all 0.5s ease;
+}
+.contact:hover{background-color: blue;color: white;box-shadow: 0 0 20px white;transform: scale(1.1);}
