@@ -36,6 +36,7 @@ nav {
 }
 .navlinks li:hover {
   color: blue;
+
   text-shadow: 3px 3px 20px blue, -2px 1px 3px white;
 }
 .logo {
@@ -54,4 +55,81 @@ nav {
   color: white;
   transition: all 0.5s ease;
 }
-.contact:hover{background-color: blue;color: white;box-shadow: 0 0 20px white;transform: scale(1.1);}
+.contact:hover {
+  background-color: blue;
+  color: white;
+  box-shadow: 0 0 20px white;
+  transform: scale(1.1);
+}
+
+section {
+  padding: 110px 16% 90px;
+}
+.hero {
+  height: 100vh;
+  width: 100%;
+  /*
+background: url(./assets/images/mypic.png);
+background-size: cover;
+background-position: top right;
+*/
+  display: flex;
+  justify-content: grid;
+  grid-template-columns: 70% 30%;
+  color: white;
+}
+
+.main-article {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  margin-right: 30px;
+  text-align: left;
+}
+
+.my-name {
+  font-size: 40px;
+  font-weight: 600;
+}
+.my-role {
+  font-size: 23px;
+}
+.role-desc {
+  font-size: 14px;
+  text-align: left;
+}
+.socials {
+}
+.image{border-radius: 50%;border: 10px solid blue;}
+.btn {
+  padding: 10px 20px;
+
+  display: inline-block;
+  background-color: blue;
+  color: wheat;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 2px solid blue;
+  font-size: 15px;
+  margin-right: 10px;
+  transition: all 0.5s ease;
+}
+.btn:hover {
+  background-color: transparent;
+  color: blue;
+  box-shadow: 0 0 20px blue;
+}
+.btn1{background-color: transparent;color:blue;}
+.btn1:hover {
+  background-color: blue;
+  color: white;
+  box-shadow: 0 0 20px blue;
+}
+
+nav.sticky{background-color:  rgb(43, 41, 41);padding: 5% 16px;box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);}
+
+.about{display: flex;justify-content: space-around;align-items: start; color: white;}
+.about-image{border-radius: 50%; height: 400px;width: 400px;margin-right: 20px;border: 3px solid blue;}
+.about article{width: 100%;margin-right: -60px;}
+.about p{text-align: left;font-size: 18px;}

@@ -1,15 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import About from "./About";
 
+import image from "./assets/images/mypic.png";
 function App() {
-  const [count, setCount] = useState(0)
+  const nav = document.querySelector(".navlinks");
+  window.addEventListener("scroll", () => {
+    nav.classList.toggle("sticky", window.scrollY > 12);
+  });
 
   return (
     <>
       <div>
-        <nav>
+        <nav className="nav">
           <div>
             <span className="logo">HiTech</span>
           </div>
@@ -23,28 +28,27 @@ function App() {
           </ul>
           <div className="contact">Contact Me</div>
         </nav>
-        <section>
+        <section className="hero">
           <article className="main-article">
-            <h4>Hi,I am Aweda Ifeoluwa</h4>
-            <h1>And I am a Backend Engineer</h1>
-            <p>
+            <h4>Hi,Its me </h4>
+            <h1 className="my-name">Aweda Ifeoluwa</h1>
+            <h1 className="my-role">And I am a Backend Engineer</h1>
+            <p className="role-desc">
               I am software enginner with 3years experience.Expertise is web
               development and many more{" "}
             </p>
+            <div className="social-link">3 4 4</div>
+            <main className="main-btn">
+              <button className="btn btn1">Github</button>
+              <button className="btn btn2">Download CV</button>
+            </main>
           </article>
-          <div className='social-link'>
-3
-4
-4
-          </div>
-          <main>
-            <button>Contact me</button>
-            <button>Download CV</button>
-          </main>
+          <img src={image} alt="" className="image" />
         </section>
+        <About />
       </div>
     </>
   );
 }
 
-export default App
+export default App;
