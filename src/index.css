@@ -10,6 +10,7 @@
   list-style: none;
   text-decoration: none;
   background-color: rgb(43, 41, 41);
+  color: white;
 }
 
 nav {
@@ -324,7 +325,7 @@ nav.sticky {
 
 .progress-bar {
   stroke-width: 10;
-  stop-color:black;
+  stop-color: black;
   fill: transparent;
   stroke-dasharray: 502;
   stroke-dashoffset: 502;
@@ -358,7 +359,6 @@ svg {
 
 .path1 {
   animation: animate-path1 1s 1s linear forwards;
-  
 }
 
 .path2 {
@@ -373,7 +373,6 @@ svg {
 @keyframes animate-path1 {
   100% {
     stroke-dashoffset: 290;
-   
   }
 }
 
@@ -394,3 +393,53 @@ svg {
     stroke-dashoffset: 275;
   }
 }
+
+.project-image {
+  width: 300px;
+  height: 250px;
+}
+.project-article {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: row;
+  margin-bottom: 20px;
+  background-color: aqua;
+  padding: 20px;
+}
+.project-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 40px;
+  margin-top: 30px;
+}
+
+.project-main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 30px;
+}
+.contact-article h2{margin-bottom: 20px;}
+.contact-info{margin-bottom: 20px;}
+.conatct-contact1{display: flex;justify-content:flex-start;align-items:center;height: 20px;background-color: aqua;}
+.contact-name{font-size: 16px;margin-left: 5px}
+.contact-icon{font-size: 15px;}
+.contact-heading{display: flex;justify-content: center;align-items: center;}
+
+.contact-btn{padding: 10px;width:150px;border-radius: 5px;background-color: blue;border: 1px solid blue; }
+.contact-btn-container{display: flex;justify-content: center;align-items: center;width: 100%;}
+.form{width: 600px;}
+form{display:flex;justify-content:start;align-items: start;flex-direction: column;}
+.contact-main{display: flex; justify-content: space-between;align-items: start;}
+.contact-article{text-align: left;}
+input{width: 400px;height: 40px;margin: 10px; outline: none; border-radius: 5px;padding: 5px;border: 1px solid gainsboro;}
+textarea{width: 400px;height: 200px; margin: 10px; outline: none;border-radius: 5px;text-align: left;padding: 10px;border: 1px solid gainsboro;}
+.footer{height: 40px; width: 100%;background-color: aliceblue;margin: 0;padding: 0;display: flex;justify-content: center;align-items: center;}
+.footer span{background-color: transparent;color: #000;}
+.floater{float: right;margin-right: 5%;position:sticky;}
+.floater-icon{font-size: 30px;background-color: blue;color: #fff;border-radius: 50%;cursor: pointer;}

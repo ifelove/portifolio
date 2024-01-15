@@ -8,6 +8,8 @@ import Skill from "./Skill";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import Projects from "./Projects";
+import Contact from "./Contact";
+import Footer from "./Footer";
 
 
 import image from "./assets/images/mypic.png";
@@ -26,6 +28,8 @@ function App() {
         <Services/>
         <Skill/>
         <Projects/>
+        <Contact/>
+        <Footer/>
       </div>
     </>
   );
