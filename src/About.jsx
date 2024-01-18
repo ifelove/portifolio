@@ -1,11 +1,14 @@
 import React from "react";
 import image2 from "./assets/images/mypic.png";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
 const About = () => {
+  AOS.init();
   return (
     <section className="about" id="about">
-      <img src={image2} alt="" className="about-image" />
-      <article>
+      <img src={image2} alt="" className="about-image" data-aos="zoom-in-up" />
+      <article data-aos="zoom-in-up">
         <h2>About me</h2>
         <h4>Backend Developer</h4>
         <p>
@@ -16,14 +19,11 @@ const About = () => {
           delightful. I was a student at ALX Africa where I spent 1year learning
           te fundamentals of software engineering.I also worked serve as an
           intern in ALX Africa where I specialised as a Backend developer.
-          
-          Through these experiences.I had the opportunity to work with team and 
+          Through these experiences.I had the opportunity to work with team and
           as individual,specialised and cross-functional teams across different
-           time zones and develope a working style that leans towards flexibility,clarity and colaboration.
-
-           I am currently looking for a role as a developer.
-
-         
+          time zones and develope a working style that leans towards
+          flexibility,clarity and colaboration. I am currently looking for a
+          role as a developer.
         </p>
       </article>
     </section>

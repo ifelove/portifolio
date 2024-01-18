@@ -11,19 +11,21 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
+
 import image from "./assets/images/mypic.png";
 function App() {
+
   const [animateNav, setAnimateNav] = React.useState(false);
   const handleScroll = (e) => {
     const position = window.scrollY;
-   //  setSrollPosition(position);
-     console.log("scrollY",window.scrollY)
-     console.log("position",position)
-     if (position > 234){
-      setAnimateNav(true)
-     }else{ setAnimateNav(false);}
-
-
+    //  setSrollPosition(position);
+    console.log("scrollY", window.scrollY);
+    console.log("position", position);
+    if (position > 234) {
+      setAnimateNav(true);
+    } else {
+      setAnimateNav(false);
+    }
   };
 
   React.useEffect(() => {
@@ -40,7 +42,10 @@ function App() {
         <Navbar animateNav={animateNav} />
         <Hero />
 
-        <About />
+      
+          {" "}
+          <About />
+      
 
         <Skill />
         <Projects />

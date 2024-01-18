@@ -1,14 +1,17 @@
 import React from "react";
 import image from "./assets/images/mypic.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import cv from "./assets/files/Aweda_Ifeoluwa_Olorundele_CV.doc";
 
 import { FloatButton } from "antd";
 
 const Hero = () => {
+  AOS.init()
   return (
-    <>
+    <> 
       <section className="hero">
-        <article className="main-article">
+        <article className="main-article" data-aos="fade-up">
           <h4>Hi,Its me </h4>
           <h1 className="my-name">Aweda Ifeoluwa</h1>
           <h1 className="my-role">And I am a Backend Engineer</h1>

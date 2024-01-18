@@ -2,17 +2,23 @@ import React from "react";
 import reveew from "./assets/images/reveew.png";
 import foodlens from "./assets/images/foodlens.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Projects = () => {
+    AOS.init();
   return (
     <section className="projects" id="project">
       <div className="contact-heading">
         {" "}
-        <h2 className="heading"> Projects</h2>
+        <h2 className="heading" data-aos="fade-right" data-aos-offset="300">
+          {" "}
+          Projects
+        </h2>
       </div>
 
       <div className="project-container">
-        <article className="project-article">
+        <article className="project-article" data-aos="zoom-in-up">
           <div>
             <img src={reveew} alt="" className="project-image" />
           </div>
@@ -52,7 +58,7 @@ const Projects = () => {
           </div>
         </article>
 
-        <article className="project-article">
+        <article className="project-article" data-aos="zoom-in-up">
           <div>
             <img src={foodlens} alt="" className="project-image" />
           </div>

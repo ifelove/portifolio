@@ -1,17 +1,26 @@
 import React from "react";
 import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 const Contact = () => {
+    AOS.init();
   return (
     <>
       <div className="contact-heading" id="contact">
         {" "}
-        <h1>Contact</h1>
+        <h1
+          data-aos="fade-right"
+          data-aos-offset="300"
+        
+        >
+          Contact
+        </h1>
       </div>
       <section className="contact-main">
-        <main className="contact-article">
+        <main className="contact-article" data-aos="fade-right">
           <h2>Let's work together</h2>
           <p className="contact-info">
             A unique experience in to how each customer has spent over te past
@@ -35,7 +44,7 @@ const Contact = () => {
             </div>
           </div>
         </main>
-        <div className="form">
+        <div className="form" data-aos="fade-left">
           <form action="">
             <input type="text" placeholder="Name" />
             <input type="text" placeholder="Email" />
@@ -52,7 +61,6 @@ const Contact = () => {
           </form>
         </div>
       </section>
-     
     </>
   );
 };

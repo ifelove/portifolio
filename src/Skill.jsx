@@ -5,16 +5,20 @@ import { SiJavascript } from "react-icons/si";
 const Skill = () => {
   return (
     <section>
-      <div className='contact-heading' id='skill'>
+      <div className="contact-heading" id="skill">
         {" "}
-        <h1 className="heading">My Skill</h1>
+        <h1 className="heading" data-aos="fade-right" data-aos-offset="300">
+          My Skill
+        </h1>
       </div>
 
       <main className="skill-container">
         <main className="technical-container">
           <h1 className="heading">Technical Skill</h1>
           <article className="skill-main">
-            <span className="icon"><FaHtml5/></span>
+            <span className="icon">
+              <FaHtml5 />
+            </span>
             <div className="info">
               <span>HTML</span>
             </div>
@@ -33,7 +37,9 @@ const Skill = () => {
             </div>
           </article>
           <article className="skill-main">
-            <span className="icon">< SiJavascript/></span>
+            <span className="icon">
+              <SiJavascript />
+            </span>
             <div className="info">
               <span>JAVASCRIPT</span>
             </div>
