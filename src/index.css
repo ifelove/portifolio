@@ -137,7 +137,8 @@ background-position: top right;
 nav.sticky {
   background-color: rgb(43, 41, 41);
   padding: 5% 16px;
-  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 1);
+  z-index: 100;
 }
 
 .about {
@@ -185,12 +186,14 @@ nav.sticky {
 .services-card:hover {
   transform: translateY(-5px) scale(1.03);
 }
+.services p{font-size: 14px;}
 
 .skill-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 30px;
   color: white;
+  
 }
 
 .technical-container {
@@ -213,6 +216,7 @@ nav.sticky {
   animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
   transform: scaleX(0);
   transform-origin: left;
+  z-index: 2;
 }
 .progress-line span {
   height: 100%;
@@ -393,10 +397,11 @@ svg {
     stroke-dashoffset: 275;
   }
 }
+.projects{}
 
 .project-image {
   width: 300px;
-  height: 250px;
+  height: 280px;
 }
 .project-article {
   display: flex;
@@ -404,9 +409,11 @@ svg {
   align-items: start;
   flex-direction: row;
   margin-bottom: 20px;
-  background-color: aqua;
+  background-color: black;
   padding: 20px;
 }
+.readmore-arrow{color: blue;}
+.project-btn{background-color: blue;padding: 5px;border-radius: 5px;border: 1px solid blue;}
 .project-link {
   display: flex;
   justify-content: space-between;
@@ -423,6 +430,7 @@ svg {
   flex-direction: column;
   text-align: left;
   margin-left: 30px;
+  padding: 10px;
 }
 .contact-article h2{margin-bottom: 20px;}
 .contact-info{margin-bottom: 20px;}
@@ -441,5 +449,6 @@ input{width: 400px;height: 40px;margin: 10px; outline: none; border-radius: 5px;
 textarea{width: 400px;height: 200px; margin: 10px; outline: none;border-radius: 5px;text-align: left;padding: 10px;border: 1px solid gainsboro;}
 .footer{height: 40px; width: 100%;background-color: aliceblue;margin: 0;padding: 0;display: flex;justify-content: center;align-items: center;}
 .footer span{background-color: transparent;color: #000;}
-.floater{float: right;margin-right: 5%;position:sticky;}
+.floater{float: right;margin-right: 5%;;position: fixed;}
 .floater-icon{font-size: 30px;background-color: blue;color: #fff;border-radius: 50%;cursor: pointer;}
+.bk-icon{background-color:blue;}

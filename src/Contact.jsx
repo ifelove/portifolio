@@ -6,7 +6,7 @@ import { MdEmail } from "react-icons/md";
 const Contact = () => {
   return (
     <>
-      <div className="contact-heading">
+      <div className="contact-heading" id="contact">
         {" "}
         <h1>Contact</h1>
       </div>

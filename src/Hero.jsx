@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
 import image from "./assets/images/mypic.png";
-import { FaArrowCircleUp } from "react-icons/fa";
+import cv from "./assets/files/Aweda_Ifeoluwa_Olorundele_CV.doc";
+
+import { FloatButton } from "antd";
 
 const Hero = () => {
-     
   return (
     <>
       <section className="hero">
@@ -17,18 +18,30 @@ const Hero = () => {
           </p>
           <div className="social-link">3 4 4</div>
           <main className="main-btn">
-            <button className="btn btn1">Github</button>
-            <button className="btn btn2">Download CV</button>
+            <a
+              href="https://github.com/ifelove"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <button className="btn btn1">Github</button>
+            </a>{" "}
+            <a
+              href={cv}
+              download="Aweda Ifeoluwa CV"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <button className="btn btn2">Download CV</button>
+            </a>
           </main>
         </article>
         <img src={image} alt="" className="image" />
       </section>
-      <div className="floater">
-        {" "}
-        <FaArrowCircleUp className="floater-icon" />
-      </div>
+      <FloatButton.BackTop visibilityHeight={0} className="bk-icon" />
     </>
   );
-}
+};
 
-export default Hero
+export default Hero;

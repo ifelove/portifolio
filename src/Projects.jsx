@@ -1,12 +1,15 @@
-import React from 'react'
-import reveew from "./assets/images/reveew.png"
-import foodlens from "./assets/images/foodlens.png"
+import React from "react";
+import reveew from "./assets/images/reveew.png";
+import foodlens from "./assets/images/foodlens.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Projects = () => {
   return (
-    <section className="projects">
-      <h2 className="heading"> Projects</h2>
+    <section className="projects" id="project">
+      <div className="contact-heading">
+        {" "}
+        <h2 className="heading"> Projects</h2>
+      </div>
 
       <div className="project-container">
         <article className="project-article">
@@ -26,9 +29,25 @@ const Projects = () => {
 
             <div className="project-link">
               <p>
-                Read more <span><FaLongArrowAltRight/></span>
+                Read more{" "}
+                <span>
+                  <a
+                    href="https://github.com/Quammy93/REVEEW"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {" "}
+                    <FaLongArrowAltRight className="readmore-arrow" />
+                  </a>
+                </span>
               </p>{" "}
-              <p>API Doc</p>
+              <a
+                href="https://reveew.onrender.com/doc"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="project-btn">API Doc</button>
+              </a>
             </div>
           </div>
         </article>
@@ -49,13 +68,33 @@ const Projects = () => {
             </p>
 
             <div className="project-link">
-              <p>Read more  <span><FaLongArrowAltRight/></span></p> <p className="doc">API Doc</p>
+              <p>
+                Read more{" "}
+                <span>
+                  <a
+                    href="https://github.com/Elvis-rozy/FoodLENS"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {" "}
+                    <FaLongArrowAltRight className="readmore-arrow" />
+                  </a>{" "}
+                </span>
+              </p>{" "}
+              <a
+                href="https://food-lenz.onrender.com/doc"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <button className="project-btn">API Doc</button>
+              </a>
             </div>
           </div>
         </article>
       </div>
     </section>
   );
-}
+};
 
-export default Projects
+export default Projects;

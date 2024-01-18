@@ -1,23 +1,42 @@
-import React from 'react'
+import React from "react";
 
-const Navbar = () => {
+const Navbar = ({ animateNav }) => {
+  const container = React.useRef();
+  const nav = container.current;
+
+  /**
+   window.addEventListener("scroll", () => {
+     nav.classList.toggle("sticky", window.scrollY > 12);
+   });
+    */
+
   return (
-    <nav className="nav">
+    <nav className={`${animateNav ? "nav sticky" : "nav"}`} ref={container}>
       <div>
         <span className="logo">HiTech</span>
       </div>
 
       <ul className="navlinks">
-        <li>Home</li>
-        <li>About</li>
-        <li>Services</li>
-        <li>Skills</li>
+        <a href="#">
+          <li>Home</li>
+        </a>
+        <a href="#about">
+          <li>About</li>
+        </a>
+        <a href="#skill">
+          {" "}
+          <li>Skills</li>
+        </a>
 
-        <li>Portfolio</li>
+        <a href="#project">
+          <li>Projects</li>
+        </a>
       </ul>
-      <div className="contact">Contact Me</div>
+      <a href="#contact">
+        <div className="contact">Contact Me</div>
+      </a>
     </nav>
   );
-}
+};
 
-export default Navbar
+export default Navbar;
