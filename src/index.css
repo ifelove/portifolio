@@ -75,9 +75,10 @@ background-size: cover;
 background-position: top right;
 */
   display: flex;
-  justify-content: grid;
-  grid-template-columns: 70% 30%;
+  justify-content: center;
+  grid-template-columns: 100%;
   color: white;
+ 
 }
 
 .main-article {
@@ -87,15 +88,23 @@ background-position: top right;
   flex-direction: column;
   margin-right: 30px;
   text-align: left;
+  padding-left: 100px;
 }
 
+
 .my-name {
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 60px;
+  font-weight: 900;
+  letter-spacing: 1px;
 }
 .my-role {
-  font-size: 23px;
+  font-size: 33px;
+  font-weight: 600;
+
 }
+
+
+.my-role span{color: blue;}
 .role-desc {
   font-size: 14px;
   text-align: left;
@@ -139,6 +148,7 @@ nav.sticky {
   padding: 5% 16px;
   box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 1);
   z-index: 100;
+
 }
 
 .about {

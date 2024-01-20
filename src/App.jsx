@@ -21,7 +21,7 @@ function App() {
     //  setSrollPosition(position);
     console.log("scrollY", window.scrollY);
     console.log("position", position);
-    if (position > 234) {
+    if (position > 13) {
       setAnimateNav(true);
     } else {
       setAnimateNav(false);
@@ -40,13 +40,7 @@ function App() {
     <>
       <div>
         <Navbar animateNav={animateNav} />
-        <Hero />
-
-      
-          {" "}
-          <About />
-      
-
+        <Hero /> <About />
         <Skill />
         <Projects />
         <Contact />

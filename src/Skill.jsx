@@ -1,18 +1,29 @@
-import React from 'react'
+import React from "react";
 import { FaHtml5 } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
+import { IoLogoCss3 } from "react-icons/io5";
+import { FaJava, FaPython, FaReact, FaNodeJs, FaNode } from "react-icons/fa";
 
 const Skill = () => {
+  const Container = React.useRef();
+  const skillContainer = Container.current;
+  const scrollToContainer = (e) => {
+    e.preventDefault();
+    if (skillContainer) {
+      skillContainer.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <section>
-      <div className="contact-heading" id="skill">
+      <div className="contact-heading" id="skill" ref={Container}>
         {" "}
         <h1 className="heading" data-aos="fade-right" data-aos-offset="300">
           My Skill
         </h1>
       </div>
 
-      <main className="skill-container">
+      <main className="skill-container" data-aos="fade-down">
         <main className="technical-container">
           <h1 className="heading">Technical Skill</h1>
           <article className="skill-main">
@@ -28,7 +39,9 @@ const Skill = () => {
           </article>
 
           <article className="skill-main">
-            <span className="icon">Icon</span>
+            <span className="icon">
+              <IoLogoCss3 />
+            </span>
             <div className="info">
               <span>CSS</span>
             </div>
@@ -48,7 +61,9 @@ const Skill = () => {
             </div>
           </article>
           <article className="skill-main">
-            <span className="icon">Icon</span>
+            <span className="icon">
+              <FaJava />
+            </span>
             <div className="info">
               <span>JAVA</span>
             </div>
@@ -57,7 +72,9 @@ const Skill = () => {
             </div>
           </article>
           <article className="skill-main">
-            <span className="icon">Icon</span>
+            <span className="icon">
+              <FaPython />
+            </span>
             <div className="info">
               <span>PYTHON</span>
             </div>
@@ -66,7 +83,9 @@ const Skill = () => {
             </div>
           </article>
           <article className="skill-main">
-            <span className="icon">Icon</span>
+            <span className="icon">
+              <FaReact />
+            </span>
             <div className="info">
               <span>REACT</span>
             </div>
@@ -75,7 +94,9 @@ const Skill = () => {
             </div>
           </article>
           <article className="skill-main">
-            <span className="icon">Icon</span>
+            <span className="icon">
+              <FaNodeJs />
+            </span>
             <div className="info">
               <span>NODE.JS</span>
             </div>
@@ -154,6 +175,6 @@ const Skill = () => {
       </main>
     </section>
   );
-}
+};
 
-export default Skill
+export default Skill;
