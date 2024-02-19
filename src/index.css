@@ -13,6 +13,7 @@
   color: white;
 }
 
+.menu{font-size: 30px; display: none;}
 nav {
   display: flex;
   justify-content: space-around;
@@ -52,7 +53,7 @@ nav {
 .contact {
   display: inline;
   border: 2px solid white;
-  padding: 11px 26px;
+  padding: 10px 26px;
   color: white;
   transition: all 0.5s ease;
 }
@@ -64,7 +65,7 @@ nav {
 }
 
 section {
-  padding: 110px 16% 90px;
+  padding: 0 16% 80px;
 }
 .hero {
   height: 100vh;
@@ -78,7 +79,15 @@ background-position: top right;
   justify-content: center;
   grid-template-columns: 100%;
   color: white;
- 
+}
+.main-hero{
+
+ display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+
+
 }
 
 .main-article {
@@ -91,20 +100,24 @@ background-position: top right;
   padding-left: 100px;
 }
 
-
 .my-name {
   font-size: 60px;
   font-weight: 900;
   letter-spacing: 1px;
+  width: 700px;
 }
 .my-role {
   font-size: 33px;
   font-weight: 600;
-
 }
 
+.new {
+  background-color: white;
+}
 
-.my-role span{color: blue;}
+.my-role span {
+  color: blue;
+}
 .role-desc {
   font-size: 14px;
   text-align: left;
@@ -148,7 +161,13 @@ nav.sticky {
   padding: 5% 16px;
   box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 1);
   z-index: 100;
+}
 
+.p-about {
+ 
+
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .about {
@@ -170,7 +189,7 @@ nav.sticky {
 }
 .about p {
   text-align: left;
-  font-size: 18px;
+  font-size: 15px;
 }
 .services-main {
   display: grid;
@@ -196,14 +215,15 @@ nav.sticky {
 .services-card:hover {
   transform: translateY(-5px) scale(1.03);
 }
-.services p{font-size: 14px;}
+.services p {
+  font-size: 14px;
+}
 
 .skill-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 30px;
   color: white;
-  
 }
 
 .technical-container {
@@ -296,7 +316,27 @@ nav.sticky {
 }
 
 .skill-main {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+.sk-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 500px;
+}
+.sk-list {
+  padding: 10px;
+  background-color: blue;
+}
+
+.skill-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 
 .info span {
@@ -407,7 +447,9 @@ svg {
     stroke-dashoffset: 275;
   }
 }
-.projects{}
+.project-container {
+  margin-top: 60px;
+}
 
 .project-image {
   width: 300px;
@@ -422,8 +464,15 @@ svg {
   background-color: black;
   padding: 20px;
 }
-.readmore-arrow{color: blue;}
-.project-btn{background-color: blue;padding: 5px;border-radius: 5px;border: 1px solid blue;}
+.readmore-arrow {
+  color: blue;
+}
+.project-btn {
+  background-color: blue;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid blue;
+}
 .project-link {
   display: flex;
   justify-content: space-between;
@@ -442,23 +491,570 @@ svg {
   margin-left: 30px;
   padding: 10px;
 }
-.contact-article h2{margin-bottom: 20px;}
-.contact-info{margin-bottom: 20px;}
-.conatct-contact1{display: flex;justify-content:flex-start;align-items:center;height: 20px;background-color: aqua;}
-.contact-name{font-size: 16px;margin-left: 5px}
-.contact-icon{font-size: 15px;}
-.contact-heading{display: flex;justify-content: center;align-items: center;}
+.contact-article h2 {
+  margin-bottom: 20px;
+}
+.contact-info {
+  margin-bottom: 20px;
+}
+.conatct-contact1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 20px;
+  background-color: aqua;
+}
+.contact-name {
+  font-size: 16px;
+  margin-left: 5px;
+}
+.contact-icon {
+  font-size: 15px;
+}
+.contact-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-btn {
+  padding: 10px;
+  width: 150px;
+  border-radius: 5px;
+  background-color: blue;
+  border: 1px solid blue;
+}
+.contact-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.form {
+  width: 600px;
+}
+form {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+.contact-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.contact-article {
+  text-align: left;
+}
+input {
+  width: 400px;
+  height: 40px;
+  margin: 10px;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid gainsboro;
+}
+textarea {
+  width: 400px;
+  height: 150px;
+  margin: 10px;
+  outline: none;
+  border-radius: 5px;
+  text-align: left;
+  padding: 10px;
+  border: 1px solid gainsboro;
+}
+.footer {
+  height: 40px;
+  width: 100%;
+  background-color: aliceblue;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer span {
+  background-color: transparent;
+  color: #000;
+}
+.floater {
+  float: right;
+  margin-right: 5%;
+  position: fixed;
+}
+.floater-icon {
+  font-size: 30px;
+  background-color: blue;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.bk-icon {
+  background-color: blue;
+}
 
-.contact-btn{padding: 10px;width:150px;border-radius: 5px;background-color: blue;border: 1px solid blue; }
-.contact-btn-container{display: flex;justify-content: center;align-items: center;width: 100%;}
-.form{width: 600px;}
-form{display:flex;justify-content:start;align-items: start;flex-direction: column;}
-.contact-main{display: flex; justify-content: space-between;align-items: start;}
-.contact-article{text-align: left;}
-input{width: 400px;height: 40px;margin: 10px; outline: none; border-radius: 5px;padding: 5px;border: 1px solid gainsboro;}
-textarea{width: 400px;height: 200px; margin: 10px; outline: none;border-radius: 5px;text-align: left;padding: 10px;border: 1px solid gainsboro;}
-.footer{height: 40px; width: 100%;background-color: aliceblue;margin: 0;padding: 0;display: flex;justify-content: center;align-items: center;}
-.footer span{background-color: transparent;color: #000;}
-.floater{float: right;margin-right: 5%;;position: fixed;}
-.floater-icon{font-size: 30px;background-color: blue;color: #fff;border-radius: 50%;cursor: pointer;}
-.bk-icon{background-color:blue;}
+@media screen and (max-width: 450px) {
+
+ 
+  .navlinks, .contact{display: none;}
+  .icon-color{color: white; }
+
+  .menu{ display: block;}
+
+  .logo {
+  font-size: 25px;
+  font-weight: 900;
+  color: blue;
+  background-color: transparent;
+}
+  nav{
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: all 0.5s ease;
+  padding:0  30px;
+  background-color: blue;
+
+  }
+
+.btn {
+  padding: 6px 16px;
+
+  display: inline-block;
+  background-color: blue;
+  color: wheat;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 2px solid blue;
+  font-size: 13px;
+  margin-right: 10px;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+}
+.btn:hover {
+  background-color: transparent;
+  color: blue;
+  box-shadow: 0 0 20px blue;
+}
+.btn1 {
+  background-color: transparent;
+  color: blue;
+}
+.btn1:hover {
+  background-color: blue;
+  color: white;
+  box-shadow: 0 0 20px blue;
+}
+
+
+  section {
+  padding: 0 ;
+}
+  .hero {
+
+  width: 100%;
+  /*
+background: url(./assets/images/mypic.png);
+background-size: cover;
+background-position: top right;
+*/
+  display: flex;
+  justify-content: center;
+  grid-template-columns: 100%;
+  color: white;
+  background-color: aqua;
+  height: 670px;
+  padding: 0;
+  margin: 0;
+}
+.main-hero{
+  margin-top: -60px;
+
+ display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 670px;
+
+
+}
+
+.main-article {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  
+  text-align: left;
+  
+}
+
+.my-name {
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  width: 300px;
+}
+.my-role {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.new {
+  background-color: white;
+}
+
+.my-role span {
+  color: blue;
+}
+.role-desc {
+  font-size: 12px;
+  text-align: left;
+}
+
+
+
+
+
+
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  color: white;
+  flex-direction: column;
+}
+.about-image {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  margin-bottom: 10px;
+  border: 3px solid blue;
+
+
+}
+
+.about article {
+  width: 300px;
+  margin-right: -60px;
+}
+.about p {
+  text-align: left;
+  font-size: 12px;
+}
+
+.project-container {
+  margin-top: 60px;
+
+}
+
+.project-image {
+  width: 250px;
+  height: 250px;
+}
+.project-article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  background-color: black;
+
+  
+ 
+}
+ .aos-animate{margin: 0;padding: 0;}
+.readmore-arrow {
+  color: blue;
+}
+section.app{padding: 0 0 0;}
+.project-btn {
+  background-color: blue;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid blue;
+}
+.project-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 20px;
+  margin-top: 30px;
+}
+
+.project-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  width: 250px;
+  margin-left: 0px;
+  font-size: 14px;
+  
+ 
+  margin-top: 20px;
+ 
+}
+section {
+  padding: 0 12% 50px;
+}
+
+.contact-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+ padding: 0;
+ margin: 0;
+ width: 200px;
+margin-bottom: 100px;
+
+
+  
+}
+
+
+#contact{}
+
+.contact:hover {
+  background-color: blue;
+  color: white;
+  box-shadow: 0 0 20px white;
+  transform: scale(1.1);
+}
+.contact-article{display: none;}
+.contact-article h2 {
+  margin-bottom: 20px;
+}
+.contact-info {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+.contact-btn-container{display: flex;justify-content: center;align-items: center;margin-left: auto;}
+.contact-btn{width: 200px;margin-left: 100px;}
+.conatct-contact1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 20px;
+  background-color: aqua;
+}
+.contact-name {
+  font-size: 12px;
+  margin-left: 5px;
+}
+.contact-icon {
+  font-size: 15px;
+}
+
+
+.form {
+  width: 300px;
+}
+form {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  width: 300px;
+  margin-left: 50px;
+}
+
+input {
+  width: 300px;
+  height: 40px;
+  margin: 10px;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid gainsboro;
+  margin-left: 50px;
+ 
+
+}
+
+textarea {
+  width: 300px;
+  height: 100px;
+  margin: 10px;
+  outline: none;
+  border-radius: 5px;
+  text-align: left;
+  padding: 10px;
+  border: 1px solid gainsboro;
+   margin-left: 50px;
+ 
+}
+
+}
+@media screen and (min-width: 451px)and (max-width: 649px)  
+{
+
+
+  .navlinks {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+
+}
+.contact{
+font-size: 13px;
+ padding: 8px 8px;
+}
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  color: blue;
+  background-color: transparent;
+}
+.navlinks li {
+  transition: all 0.5s ease;
+  font-weight: 400;
+  color: white;
+  font-size: 13px;
+}
+.main-hero{
+
+ display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+
+
+}
+.my-name {
+  font-size: 20px;
+  font-weight: 900;
+  width: 400px;
+  
+}
+.my-role {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.role-desc {
+  font-size: 12px;
+  text-align: left;
+  width: 450px;
+}
+
+}
+
+
+@media screen and (min-width: 650px)and (max-width: 800px)  
+{
+  .navlinks {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+
+}
+.contact{
+font-size: 15px;
+ padding: 10px 10px;
+}
+
+.navlinks li {
+  transition: all 0.5s ease;
+  font-weight: 400;
+  color: white;
+  font-size: 13px;
+}
+.main-hero{
+
+ display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+
+
+}
+.my-name {
+  font-size: 40px;
+  font-weight: 900;
+  
+}
+.my-role {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.role-desc {
+  font-size: 12px;
+  text-align: left;
+}
+ 
+}
+
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  .navlinks {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+.main-hero{
+
+ display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+
+
+}
+
+.main-article {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 100px;
+}
+
+.my-name {
+  font-size: 40px;
+  font-weight: 900;
+  
+}
+.my-role {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.new {
+  background-color: white;
+}
+
+.my-role span {
+  color: blue;
+}
+.role-desc {
+  font-size: 14px;
+  text-align: left;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;}
+
+
+}

@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 const Projects = () => {
     AOS.init();
   return (
-    <section className="projects" id="project">
+    <section className="projects" >
       <div className="contact-heading">
         {" "}
         <h2 className="heading" data-aos="fade-right" data-aos-offset="300">

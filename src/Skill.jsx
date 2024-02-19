@@ -3,26 +3,59 @@ import { FaHtml5 } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 import { IoLogoCss3 } from "react-icons/io5";
 import { FaJava, FaPython, FaReact, FaNodeJs, FaNode } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Skill = () => {
   const Container = React.useRef();
-  const skillContainer = Container.current;
-  const scrollToContainer = (e) => {
-    e.preventDefault();
-    if (skillContainer) {
-      skillContainer.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
+
 
   return (
     <section>
-      <div className="contact-heading" id="skill" ref={Container}>
+      <div className="contact-heading" ref={Container}>
         {" "}
         <h1 className="heading" data-aos="fade-right" data-aos-offset="300">
           My Skill
         </h1>
       </div>
 
+      {/** */}
+
+      <div className="skill-section">
+        <ul className="sk-list-container">
+          <li className="sk-list" data-aos="fade-up">
+            JavaScript
+          </li>
+          <li className="sk-list" data-aos="fade-up">
+            HTML
+          </li>
+          <li className="sk-list" data-aos="fade-down">
+            CSS
+          </li>
+          <li className="sk-list" data-aos="fade-up">
+            REACT
+          </li>
+          <li className="sk-list" data-aos="fade-up">
+            Node.js
+          </li>
+          <li className="sk-list" data-aos="fade-down">
+            Express
+          </li>
+          <li className="sk-list" data-aos="fade-up">
+            Python
+          </li>
+          <li className="sk-list" data-aos="fade-down">
+            Java
+          </li>
+          <li className="sk-list" data-aos="fade-down">
+            MongoDB
+          </li>
+          <li className="sk-list" data-aos="fade-up">
+            MYSQL
+          </li>
+        </ul>
+      </div>
+      {/**
       <main className="skill-container" data-aos="fade-down">
         <main className="technical-container">
           <h1 className="heading">Technical Skill</h1>
@@ -172,7 +205,9 @@ const Skill = () => {
             </div>
           </div>
         </div>
+       
       </main>
+        */}
     </section>
   );
 };

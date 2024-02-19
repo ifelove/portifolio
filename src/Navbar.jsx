@@ -1,6 +1,7 @@
 import React from "react";
 
-const Navbar = ({ animateNav,scrollToContainer }) => {
+
+const Navbar = ({ animateNav, scrollToContainer }) => {
   const container = React.useRef();
   const nav = container.current;
 
@@ -15,6 +16,7 @@ const Navbar = ({ animateNav,scrollToContainer }) => {
       <div>
         <span className="logo">HiTech</span>
       </div>
+
 
       <ul className="navlinks">
         <a href="#">
@@ -35,6 +37,7 @@ const Navbar = ({ animateNav,scrollToContainer }) => {
           <li>Tools</li>
         </a>
       </ul>
+
       <a href="#contact">
         <div className="contact">Contact Me</div>
       </a>

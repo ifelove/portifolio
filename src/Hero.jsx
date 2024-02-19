@@ -13,7 +13,7 @@ const Hero = () => {
 
  React.useEffect(() => {
    const typed = new Typed(el.current, {
-     strings: ["Software Engineer", "RMS Engineer"],
+     strings: ["Software Engineer"],
      typeSpeed: 200,
      backSpeed:200,
      backDelay:1000,
@@ -29,41 +29,44 @@ const Hero = () => {
 
   return (
     <>
-      <section className="hero">
-        <article className="main-article" data-aos="fade-up">
-          <h4>Hi,Its me </h4>
-          <h1 className="my-name">Aweda Ifeoluwa</h1>
-          <h1 className="my-role">
-            And I am a <span ref={el}></span>
-          </h1>
-          <p className="role-desc">
-            I am software enginner with 3years experience.Expertise is web
-            development and many more{" "}
-          </p>
-          <div className="social-link">3 4 4</div>
-          <main className="main-btn">
-            <a
-              href="https://github.com/ifelove"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {" "}
-              <button className="btn btn1">Github</button>
-            </a>{" "}
-            <a
-              href={cv}
-              download="Aweda Ifeoluwa CV"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {" "}
-              <button className="btn btn2">Download CV</button>
-            </a>
-          </main>
-        </article>
-        {/* <img src={image} alt="" className="image" /> */}
-      </section>
-      <FloatButton.BackTop visibilityHeight={0} className="bk-icon" />
+      <article className="main-hero">
+      
+        <section className="hero">
+          <article className="main-article" data-aos="fade-up">
+            <h4>Hi,Its me </h4>
+            <h1 className="my-name">Aweda Ifeoluwa</h1>
+            <h1 className="my-role">
+              I am a <span ref={el}></span>
+            </h1>
+            <p className="role-desc">
+              I am software enginner with 3years experience.Expertise is web
+              development and many more{" "}
+            </p>
+         
+            <main className="main-btn">
+              <a
+                href="https://github.com/ifelove"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <button className="btn btn1">Github</button>
+              </a>{" "}
+              <a
+                href={cv}
+                download="Aweda Ifeoluwa CV"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <button className="btn btn2">Download CV</button>
+              </a>
+            </main>
+          </article>
+          {/* <img src={image} alt="" className="image" /> */}
+        </section>
+        <FloatButton.BackTop visibilityHeight={0} className="bk-icon" />
+      </article>
     </>
   );
 };
